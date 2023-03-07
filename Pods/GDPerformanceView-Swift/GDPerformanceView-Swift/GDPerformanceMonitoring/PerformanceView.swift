@@ -78,7 +78,7 @@ internal class PerformanceView: UIWindow, PerformanceViewConfigurator {
     required internal init() {
         super.init(frame: PerformanceView.windowFrame(withPrefferedHeight: Constants.prefferedHeight))
         if #available(iOS 13, *) {
-            self.windowScene = PerformanceView.keyWindowScene()
+//            self.windowScene = PerformanceView.keyWindowScene()
         }
         
         self.configureWindow()
@@ -142,8 +142,8 @@ internal extension PerformanceView {
         if self.options.contains(.memory) {
             let bytesInMegabyte = 1024.0 * 1024.0
             let usedMemory = Double(report.memoryUsage.used) / bytesInMegabyte
-            let totalMemory = Double(report.memoryUsage.total) / bytesInMegabyte
-            let memory = String(format: "%.1f of %.0f MB used", usedMemory, totalMemory)
+//            let totalMemory = Double(report.memoryUsage.total) / bytesInMegabyte
+            let memory = String(format: "%.3f M used", usedMemory)
             monitoringTexts.append(memory)
         }
         

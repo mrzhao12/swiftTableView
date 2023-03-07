@@ -369,11 +369,18 @@ static const CGFloat SVProgressHUDLabelSpacing = 8.0f;
     [self setOffsetFromCenter:UIOffsetZero];
 }
 
+- (void)dealloc {
+    NSLog(@"SV dealloc");
+}
 
 #pragma mark - Instance Methods
 
 - (instancetype)initWithFrame:(CGRect)frame {
     if((self = [super initWithFrame:frame])) {
+        
+        
+        NSLog(@"SV initWithFrame");
+        
         _isInitializing = YES;
         
         self.userInteractionEnabled = NO;

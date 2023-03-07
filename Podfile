@@ -1,7 +1,7 @@
 platform :ios, '10.0'
 
-target 'QSwiftList' do
-
+target 'QSwift' do
+  # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
   
   #网络
@@ -21,7 +21,14 @@ target 'QSwiftList' do
   pod 'GDPerformanceView-Swift', '~> 2.1.1',  :configurations => ['Debug']
   pod 'AMLeaksFinder', '2.2.3',  :configurations => ['Debug']
   
+  
+  target 'QSwiftTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
 
+  target 'QSwiftUITests' do
+    # Pods for testing
+  end
 
 end
-

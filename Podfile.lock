@@ -1,5 +1,5 @@
 PODS:
-  - Alamofire (5.6.4)
+  - Alamofire (5.6.1)
   - AMLeaksFinder (2.2.3)
   - GDPerformanceView-Swift (2.1.1)
   - HandyJSON (5.0.2)
@@ -36,7 +36,7 @@ SPEC REPOS:
     - SVProgressHUD
 
 SPEC CHECKSUMS:
-  Alamofire: 4e95d97098eacb88856099c4fc79b526a299e48c
+  Alamofire: 87bd8c952f9a4454320fce00d9cc3de57bcadaf5
   AMLeaksFinder: fa9af6a930c9739587e49f7664219a64fe2a2737
   GDPerformanceView-Swift: 22d964fe40b19e3d914dba2586237d064de8fd77
   HandyJSON: 9e4e236f5d2dbefad5155a77417bbea438201c03
@@ -47,6 +47,6 @@ SPEC CHECKSUMS:
   QUIAlertController: 98fba58f7dbbc1642faa7161caf2fd43611adc16
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: 9abdfcdbcb76d2415eb73bf099d27f1460735c72
+PODFILE CHECKSUM: 60a400e53fe74a0da3de64d82877ffea6c8e33ca
 
-COCOAPODS: 1.11.3
+COCOAPODS: 1.10.1
